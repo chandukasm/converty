@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigationPage() {
-    // Navigator.of(context).pushReplacementNamed(MyHomePage.id);
+    // Navigator.ozf(context).pushReplacementNamed(MyHomePage.id);
     Navigator.push(
       context,
       new MaterialPageRoute(
@@ -28,11 +28,16 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    startime();
+    // startime();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Image.asset('splash.jpg'));
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, '/home');
+      },
+      child: Image.asset('assets/images/splash.jpg'),
+    );
   }
 }

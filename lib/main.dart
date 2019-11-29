@@ -12,12 +12,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
       // '/HomeScreen' : home: MyHomePage(title: 'Currency Converter'),
-      initialRoute: MyHomePage.id,
+      // initialRoute: MyHomePage.id,
+      initialRoute: '/',
 
       routes: {
-        MyHomePage.id: (context) => MyHomePage(
-              title: 'Currency Converter',
-            )
+        '/': (context) => MyHomePage(),
       },
     );
   }
