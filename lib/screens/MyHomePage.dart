@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future getData() async {
     http.Response response = await http.get(
-        'https://free.currconv.com/api/v7/convert?q=$pair1,$pair2&compact=ultra&apiKey=c519fcad4756d47954bd');
+        'https://free.currconv.com/api/v7/convert?q=$pair1,$pair2&compact=ultra&apiKey=Api Key');
     String data = response.body;
     // var data1 = jsonDecode(data)['results'].keys;
     Map<String, dynamic> res = jsonDecode(data);
